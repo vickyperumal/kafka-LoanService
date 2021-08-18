@@ -15,13 +15,14 @@ import lombok.NoArgsConstructor;
 @Document(collection = "Loan_Details")
 public class LoanDetailsEntity {
 
+	@Id
+	private Long loanId;
 	private String loanType;
 	private Long loanAmount;
 
 	private String loanDate;
 	private Double rateOfInterest;
 	private Integer loanDuration;
-	@Id
 	private Long customerId;
 	private Long monthlySalary;
 	private Integer creditScore;
